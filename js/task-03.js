@@ -17,7 +17,7 @@ const images = [
   
   images.forEach( function(image) {
     getGalleryContainer.insertAdjacentHTML(
-      'afterbegin', `<li><img src = "${image.url}" alt = "${image.alt}"  width = "250" height = "200"/></li>`);
+      'afterbegin', `<li><img src = "${image.url}" alt = "${image.alt}"  width = "450" height = "300"/></li>`);
   });
-  
+
   getGalleryContainer.setAttribute("style", "list-style-type:none; display: flex; justify-content: space-around;");
