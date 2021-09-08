@@ -3,7 +3,7 @@ const getNameValue = document.getElementById('name-output');
 const getInputValue = document.getElementById('name-input');
 // console.log(inputValue.value);
 
-const changeInput = function(event){
+function changeInput(event){
     let value = getInputValue.value;
     if (value === '') {
         getNameValue.textContent = 'незнакомец';
