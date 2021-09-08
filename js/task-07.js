@@ -6,5 +6,4 @@ const getTextValue = document.getElementById('text');
 
 getInputValue.addEventListener('input',()=>{
     getTextValue.style.fontSize = `${getInputValue.value}px`;
-    console.log(getTextValue.style.fontSize)
 })
