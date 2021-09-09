@@ -16,4 +16,4 @@ const ingredients = [
     ingredientsNewArray.push(createIngredientVariables)
   });
   
-  getVariablesContainer.append(...ingredientNewArray);
+  getVariablesContainer.append(...ingredientsNewArray);
