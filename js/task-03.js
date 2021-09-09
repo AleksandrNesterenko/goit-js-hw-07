@@ -14,10 +14,12 @@ const images = [
   ];
 
   const getGalleryContainer = document.querySelector('#gallery');
+  const imageNewArray =[];
   
   images.forEach( function(image) {
-    getGalleryContainer.insertAdjacentHTML(
-      'afterbegin', `<li><img src = "${image.url}" alt = "${image.alt}"  width = "450" height = "300"/></li>`);
+   const imageVariable = `<li><img src = "${image.url}" alt = "${image.alt}"  width = "400" height = "250"/></li>`;
+   imageNewArray.push(imageVariable);
   });
-
+  // console.log( imageNewArray.join(' '))
+  getGalleryContainer.insertAdjacentHTML('afterbegin',imageNewArray.join(' '))
   getGalleryContainer.setAttribute("style", "list-style-type:none; display: flex; justify-content: space-around;");
